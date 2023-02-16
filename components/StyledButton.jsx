@@ -6,6 +6,7 @@ export default styled.button`
   cursor: pointer;
   padding: 1rem;
   color: white;
+  background-color: var(--primary-color);
   ${({ color }) =>
     color === "danger" &&
     css`
@@ -20,6 +21,7 @@ export default styled.button`
 
   &:hover {
     color: black;
+    background-color: var(--primary-background);
     ${({ color }) =>
       color === "danger" &&
       css`

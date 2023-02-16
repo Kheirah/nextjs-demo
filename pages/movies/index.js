@@ -7,6 +7,7 @@ export default function Movies() {
   return (
     <div>
       <h1>My Favorite Movies</h1>
+      <MyButton>Click Me</MyButton>
       <MyButton color="danger">Click Me</MyButton>
       <MyButton color="success">Click Me</MyButton>
 
