@@ -20,6 +20,16 @@ export default styled.button`
 
   &:hover {
     color: black;
-    background-color: var(--primary-background);
+    ${({ color }) =>
+      color === "danger" &&
+      css`
+        background-color: var(--secondary-background);
+      `};
+
+    ${({ color }) =>
+      color === "success" &&
+      css`
+        background-color: var(--primary-success-background);
+      `};
   }
 `;
