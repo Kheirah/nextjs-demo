@@ -1,10 +1,15 @@
 import Link from "next/link";
 import Image from "next/legacy/image";
+import styled from "styled-components";
+import MyButton from "../../components/StyledButton";
+import StyledLink from "../../components/StyledLink";
 
 export default function Movies() {
   return (
-    <>
+    <div>
       <h1>My Favorite Movies</h1>
+      <MyButton color="danger">Click Me</MyButton>
+      <MyButton color="success">Click Me</MyButton>
       <ul>
         <Image
           src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba"
@@ -14,12 +19,12 @@ export default function Movies() {
           layout="responsive"
         />
         <li>
-          <Link href="/movies/hulk">Hulk</Link>
+          <StyledLink href="/movies/hulk">Hulk</StyledLink>
         </li>
         <li>
           <Link href="/movies/spiderman">Spiderman</Link>
         </li>
       </ul>
-    </>
+    </div>
   );
 }
